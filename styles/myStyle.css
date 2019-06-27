@@ -33,13 +33,6 @@ body {
     --hwwind: 0px;
     --zoomi:0px;
 }
-/*--sfont: #212728;*/
-/*--spink: #ff36a2;
---sblue: #2cc1d7;
---spurple: #942884;
---syellow: #ffeb01;
---sgreen: #64ca89;*/
-
 
 ::selection {
     background-color: rgba(255,54,162,0.99);
@@ -63,7 +56,7 @@ body {
     #container > header {
         background-color: var(--spink);
         height: 50px;
-        position: sticky;
+        position: fixed;
         top: 0;
         width: var(--wwwind);
         min-width: 1263px;
@@ -74,6 +67,9 @@ body {
 @media screen and (max-width: 800px) {
     #container > header {
         position: relative;
+    }
+    #opennigsec{
+        margin-top:0px;
     }
 }
 
@@ -267,6 +263,7 @@ nav ol {
     background-position-x: right;
     background-position-y: bottom;
     display: inline-block;
+    margin-top:50px;
 }
 
 .sec300 {
@@ -858,6 +855,7 @@ font-size:18px;
     display: inline-block;
 }
 
+/*כפתור הפעל וכבה תנועה*/
 .playstop{
     background-color: transparent;
     color: var(--sfont);
@@ -865,12 +863,6 @@ font-size:18px;
     font-size: 18px;
     border-radius: 40px;
     padding: 0px 20px;
-    /*position: sticky;
-    height: 30px;
-    right: 100px;
-    float:left;
-    margin-left:100px;
-    margin-top:15px;*/
     border: 1px solid black;
     width:120px;
 }
@@ -883,6 +875,8 @@ font-size:18px;
     background-color: var(--spink-hover);
     cursor:pointer;
 }
+
+/*דף לא נמצא*/
 
 #undifiendsec {
     background-image: url('../image/undifiend/Untitled-2.png');
