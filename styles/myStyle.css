@@ -1180,10 +1180,11 @@ ul.skip {
     position: absolute
 }
 
-ul.skip li {
-    position: absolute;
-    height: 1;
-}
+    ul.skip li {
+        position: absolute;
+        height: 1;
+        list-style: none;
+    }
 
 a.skip {
     font-size: 1.4em;
