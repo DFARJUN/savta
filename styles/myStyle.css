@@ -68,8 +68,9 @@ body {
     #container > header {
         position: relative;
     }
-    #opennigsec{
-        margin-top:0px;
+
+    #space2header {
+        display: none !important;
     }
 }
 
@@ -263,7 +264,6 @@ nav ol {
     background-position-x: right;
     background-position-y: bottom;
     display: inline-block;
-    margin-top:50px;
 }
 
 .sec300 {
@@ -2128,4 +2128,9 @@ transform: rotate(-2deg);
 #Sendbtn:hover,#Sendbtn:focus{
     background-color:var(--spink-hover);
     cursor:pointer;
+}
+
+#space2header{
+    display:block;
+    height:50px;
 }
