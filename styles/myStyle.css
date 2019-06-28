@@ -11,7 +11,9 @@
     font-family: 'Game of Thrones';
     src: url('../font/Game of Thrones.ttf') format('truetype');
 }
-
+/*/////////////////////////////////////////////////////////////////////*/
+/*///////////////////////// כללי //////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////*/
 body {
     scroll-behavior: smooth;
     direction: rtl;
@@ -51,7 +53,12 @@ body {
     font-weight: normal;
     color: var(--sfont);
     zoom: var(--zoomi);
+    overflow-y:hidden;
 }
+
+    /*/////////////////////////////////////////////////////////////////////*/
+    /*///////////////////////// תפריט ניווט כללי //////////////////////////*/
+    /*/////////////////////////////////////////////////////////////////////*/
 
     #container > header {
         background-color: var(--spink);
@@ -195,9 +202,6 @@ nav ol {
 }
 
 
-/*
-        Demo
-      */
 .show-nav {
     position: fixed;
     top: 0;
@@ -255,6 +259,117 @@ nav ol {
         z-index: 1;
     }
 
+#stopallbtn {
+    display: inline-block;
+}
+
+/*כפתור הפעל וכבה תנועה*/
+.playstop {
+    background-color: transparent;
+    color: var(--sfont);
+    font-family: nehama;
+    font-size: 18px;
+    border-radius: 40px;
+    padding: 0px 20px;
+    border: 1px solid black;
+    width: 120px;
+}
+
+#playallbtn {
+    display: none;
+}
+
+.playstop:hover {
+    background-color: var(--spink-hover);
+    cursor: pointer;
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+/*///////////////////////// פוטר //////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////*/
+
+
+#container > footer {
+    background-color: var(--sgreen);
+    padding-bottom: 10px;
+    height: 300px;
+    overflow: hidden;
+    width: var(--wwwind);
+    min-Width: 1263px;
+    max-width: 1384px;
+}
+
+    #container > footer h4 {
+        text-align: center;
+        padding-bottom: 0px;
+        padding-top: 20px;
+        font-size: 18px;
+    }
+
+    #container > footer > section {
+        width: 90%;
+        margin: 0 auto;
+        border-bottom: 2px dashed black;
+    }
+
+
+
+    #container > footer > ul {
+        list-style: none;
+        margin-bottom: 0;
+        display: inline-block;
+        width: 885px;
+        vertical-align: top;
+        margin-top: 20px
+    }
+
+    #container > footer ul {
+        list-style: none;
+    }
+
+    #container > footer > ul > li {
+        padding-left: 30PX;
+        display: inline-block;
+        vertical-align: top;
+        text-align: right;
+        color: var(--sfont) !important;
+        font-weight: bold;
+    }
+
+        #container > footer > ul > li > ul {
+            padding-right: 0px;
+            font-weight: normal;
+            padding-top: 7px;
+        }
+
+        #container > footer > ul > li > a {
+            color: var(--sfont) !important;
+            padding-bottom: 10px;
+        }
+
+        #container > footer > ul > li > ul > li > a {
+            color: var(--sfont) !important;
+        }
+
+.aiswork {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#container > footer a.aiswork:hover {
+    text-decoration: underline;
+    color: #8F0037 !important;
+    cursor: pointer !important;
+}
+
+#container > footer a:hover {
+    text-decoration: none;
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+/*///////////////////////// דף הבית //////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////*/
+
 #opennigsec {
     background-color: var(--sblue);
     background-image: url('../image/homepage/Artboard 1.png');
@@ -268,9 +383,6 @@ nav ol {
 
 .sec300 {
     height: 400px;
-    /*width: calc(100vw - 30px);
-    BORDER: 5PX SOLID BLACK;
-    MARGIN: 0PX 10px 10px 10px;*/
     width: var(--wwwind);
     min-Width: 1263px;
     max-width: 1384px;
@@ -370,16 +482,6 @@ top:-50px;
     display:inline-block;
         }
 
-
-
-#intob {
-    background-color: blue;
-    width:55vw;
-    margin: 50px 2.5vw;
-    height:260px;
-    position:relative;
-    top:20px;
-}
 
 #hazafot{
 position:relative;
@@ -612,16 +714,45 @@ background-position:right
     width: 10%;
 }
 
-
-#d0211 {
-    background-color: var(--syellow);
-    height: calc(80vh - 50px);
+.typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
 }
 
-#d1995 {
-    background-color: var(--spink);
-    height: calc(80vh - 50px);
+/* The typing effect */
+@keyframes typing {
+    0% {
+        width: 0
+    }
+
+    25% {
+        width: 100%
+    }
+
+    100% {
+        width: 100%
+    }
 }
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+/*///////////////////////// דפי תוכן //////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////*/
 
 article {
     background: -moz-linear-gradient(45deg, rgba(70,219,224,1) 0%, rgba(69,218,224,1) 1%, rgba(0,163,204,1) 100%); /* FF3.6-15 */
@@ -851,33 +982,58 @@ font-size:18px;
     height:260px !important;
 }
 
-#stopallbtn {
-    display: inline-block;
+
+
+
+.arak {
+    background-image: url('../image/ICON/arak.png');
 }
 
-/*כפתור הפעל וכבה תנועה*/
-.playstop{
-    background-color: transparent;
-    color: var(--sfont);
-    font-family: nehama;
-    font-size: 18px;
-    border-radius: 40px;
-    padding: 0px 20px;
-    border: 1px solid black;
-    width:120px;
+.tea {
+    background-image: url('../image/ICON/glass-of-water.png');
 }
 
-#playallbtn {
-    display: none;
+.tea1 {
+    background-image: url('../image/ICON/tea.png');
 }
 
-.playstop:hover {
-    background-color: var(--spink-hover);
-    cursor:pointer;
+.ginger {
+    background-image: url('../image/ICON/Asset 1@2x.png');
+    background-size: 100px 100px;
 }
 
-/*דף לא נמצא*/
+.lemom {
+    background-image: url('../image/ICON/lemon (1).png');
+}
 
+.lemon1 {
+    background-image: url('../image/ICON/lemon.png');
+}
+
+.honey {
+    background-image: url('../image/ICON/honey.png');
+}
+
+.pot {
+    background-image: url('../image/ICON/pot (1).png');
+}
+
+.pot1 {
+    background-image: url('../image/ICON/pot.png');
+}
+
+.parasite {
+    background-image: url('../image/ICON/parasite.png');
+}
+
+.parasite1 {
+    background-image: url('../image/ICON/parasite (1).png');
+}
+
+
+/*/////////////////////////////////////////////////////////////////////*/
+/*///////////////////////// דף לא נמצא //////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////*/
 #undifiendsec {
     background-image: url('../image/undifiend/Untitled-2.png');
     background-position: bottom right;
@@ -915,6 +1071,9 @@ top:50px;
         left: 500px;
     }
 
+/*/////////////////////////////////////////////////////////////////////*/
+/*///////////////////////// בוט //////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////*/
 #botnosavta {
     background-image: url('../image/homepage/bot.png');
     height: 300px;
@@ -970,168 +1129,9 @@ top:50px;
     -webkit-transform: rotate(20deg);
     -moz-transform: rotate(20deg);
 }
-.typewriter {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite; 
-    -webkit-animation-play-state: running;
-    animation-play-state: running;
-}
-
-/* The typing effect */
-@keyframes typing {
-    0% {
-        width: 0
-    }
-
-    25% {
-        width: 100%
-    }
-
-    100% {
-        width: 100%
-    }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-    from, to {
-        border-color: transparent
-    }
-
-    50% {
-        border-color: orange;
-    }
-}
-
-
-.arak {
-    background-image: url('../image/ICON/arak.png');
-}
-
-.tea {
-    background-image: url('../image/ICON/glass-of-water.png');
-}
-
-.tea1 {
-    background-image: url('../image/ICON/tea.png');
-}
-
-.ginger {
-    /*background-image: url('../image/ICON/ginger.png');*/
-    background-image: url('../image/ICON/Asset 1@2x.png');
-    background-size:100px 100px;
-}
-
-.lemom {
-    background-image: url('../image/ICON/lemon (1).png');
-}
-
-.lemon1 {
-    background-image: url('../image/ICON/lemon.png');
-}
-
-.honey {
-    background-image: url('../image/ICON/honey.png');
-}
-
-.pot {
-    background-image: url('../image/ICON/pot (1).png');
-}
-
-.pot1 {
-    background-image: url('../image/ICON/pot.png');
-}
-
-.parasite {
-    background-image: url('../image/ICON/parasite.png');
-}
-
-.parasite1 {
-    background-image: url('../image/ICON/parasite (1).png');
-}
-
-#container > footer {
-    background-color: var(--sgreen);
-    padding-bottom: 10px;
-    height: 300px;
-    overflow: hidden;
-    width: var(--wwwind);
-    min-Width: 1263px;
-    max-width: 1384px;
-}
-
-#container > footer h4{
-text-align:center;
-padding-bottom:0px;
-padding-top:20px;
-font-size:18px;
-}
-
-#container > footer>section{
-width: 90%;
-margin: 0 auto;
-border-bottom: 2px dashed black;
-
-}
 
 
 
-#container > footer>ul {
-    list-style:none;
-    margin-bottom:0;
-    display:inline-block;
-    width:885px;
-    vertical-align:top;
-    margin-top:20px
-}
-
-#container > footer ul{
-        list-style:none;
-
-}
-
-#container > footer>ul>li{
-    padding-left:30PX;
-    display:inline-block;
-    vertical-align:top;
-    text-align:right;
-    color:var(--sfont) !important;
-    font-weight:bold;
-
-}
-
-#container > footer > ul > li >ul{
-padding-right:0px;
-font-weight:normal;
-padding-top: 7px;
-    }
-
-#container > footer>ul>li>a{
-    color:var(--sfont) !important;
-        padding-bottom:10px;
-}
-
-#container > footer > ul > li > ul> li> a {
-    color: var(--sfont) !important;
-}
-
-.aiswork{
-    text-decoration:underline;
-    cursor:pointer;
-}
-
-#container > footer a.aiswork:hover {
-    text-decoration: underline;
-    color: #8F0037 !important;
-    cursor: pointer !important;
-}
-
-#container > footer a:hover{
-    text-decoration:none;
-}
 
 #interactivesec {
     background: -moz-radial-gradient(center, ellipse cover, rgba(101,219,236,1) 1%, rgba(65,157,226,1) 99%); /* FF3.6-15 */
@@ -2134,3 +2134,32 @@ transform: rotate(-2deg);
     display:block;
     height:50px;
 }
+
+#downbtn {
+    width: 150px;
+    font-family: nehama;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 20px;
+    display: inline-block;
+    height: 30px;
+    line-height: 29px;
+    filter: drop-shadow( 4px 4px 2px rgba(0, 0, 0, 0.8));
+    -webkit-filter: drop-shadow( 4px 4px 2px rgba(0, 0, 0, 0.8));
+    background-color: var(--spink);
+    color: black;
+    margin:10px;
+}
+
+    #downbtn:focus, #downbtn:hover{
+        background-color:var(--spink-hover);
+        text-decoration:none;
+    }
+
+    #downp {
+        width: 900px;
+        display: block;
+        text-align: center;
+        margin: 20px;
+        font-size: 20px;
+    }

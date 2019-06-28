@@ -20,6 +20,8 @@ window.onresize = function () {
     var wwind = window.innerWidth;
     document.documentElement.style.setProperty('--hwwind', hwind + "px");
     document.documentElement.style.setProperty('--wwwind', wwind - 17 + "px");
+    document.documentElement.style.setProperty('--zoomi', 0);
+
 }
 
 
