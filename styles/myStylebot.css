@@ -1,4 +1,4 @@
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
     header {
         display:none;
     }
@@ -11,9 +11,11 @@
         overflow:hidden;
         position:sticky;
     }
-    #container{
-        min-width:0px;
-        margin:0 !important;
+    #container {
+        min-width: 0px;
+        margin: 0 !important;
+        WIDTH: 100VW !IMPORTANT;
+        zoom:0 !important;
     }
     body {
         height: 100vh;
@@ -33,13 +35,38 @@
         margin:10px !important;
         float:right;
     }
-    #mebot>div{
-        margin:0px;
-    }
+        #mebot > div {
+            margin: 0px;
+            background-image: url('../image/bot/Asset 1@2x.png');
+            height: 127px;
+            width: 294px;
+            background-size: 294px 127px;
+        }
 
     #answerbot {
-        position: absolute;
-        bottom: -60px;
-        right: -75px;
+        position: relative;
+        bottom: 256px;
+        right: -61px;
+        background-position: bottom CENTER;
+    }
+
+        #answerbot > div {
+            background-image: url('../image/bot/Asset 3@2x.png');
+            height: 127px;
+            width: 294px;
+            background-size: 294px 127px;
+        }
+
+    #botquet {
+        background-color: transparent;
+        border: 2px solid black;
+        transform: rotate(0deg);
+        margin-right: 34px;
+        top: 14px;
+    }
+    #botbut {
+        transform: rotate(0deg);
+        top: 9px;
+        margin-right: 121px;
     }
 }
