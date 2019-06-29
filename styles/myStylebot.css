@@ -1,29 +1,38 @@
 @media screen and (max-width: 500px) {
     header {
-        display:none;
+        WIDTH: CALCL(VAR(--WWIND)+15PX) !IMPORTANT;
+        MIN-WIDTH: 0 !IMPORTANT;
     }
     footer{
         display:none;
     }
-    html{
-        width:100vw;
-        height:100vh;
-        overflow:hidden;
-        position:sticky;
+    html {
+        width: CALCL(VAR(--WWIND)+15PX) !IMPORTANT;
+        height: VAR(--HWIND);
+        overflow: hidden;
+        position: sticky;
+    }
+
+    #container > header > nav > ul > li>a{
+    right: 26px;
+    }
+
+    #container > header > nav > ul > li:nth-child(N+2) {
+        display: none;
     }
     #container {
         min-width: 0px;
         margin: 0 !important;
-        WIDTH: 100VW !IMPORTANT;
-        zoom:0 !important;
+        WIDTH: CALCL(VAR(--WWIND)+15PX) !IMPORTANT;
+        zoom: 0 !important;
     }
     body {
-        height: 100vh;
-        width: 100vw
+        height: VAR(--HWIND);
+        width: CALCL(VAR(--WWIND)+15PX) !IMPORTANT
     }
     #allbotpage {
-        height: 100vh;
-        width: 100vw
+        height: VAR(--HWIND);
+        width: CALCL(VAR(--WWIND)+15PX) !IMPORTANT
     }
     #h1und {
         margin: 10px;
@@ -37,7 +46,7 @@
     }
         #mebot > div {
             margin: 0px;
-            background-image: url('../image/bot/Asset 1@2x.png');
+            background-image: url('../image/bot/Asset 2@2x.png');
             height: 127px;
             width: 294px;
             background-size: 294px 127px;
@@ -68,5 +77,17 @@
         transform: rotate(0deg);
         top: 9px;
         margin-right: 121px;
+    }
+    #bottopage {
+        transform: rotate(0deg);
+        margin: 17px 116px;
+    }
+
+    #theanswer {
+        padding-right: 17px;
+        height: 68px;
+        font-size: 13px;
+        padding-left: 43px;
+        padding-top: 13px;
     }
 }

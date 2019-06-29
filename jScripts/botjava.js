@@ -43,6 +43,9 @@ function botfunc() {
             document.getElementById("theanswer").innerHTML = "סבתא מקלידה..";
         }, 1200);
         setTimeout(function () {
+            document.getElementById("theanswer").innerHTML = "סבתא מקלידה...";
+        }, 1500);
+        setTimeout(function () {
 
             if ((quation.includes("ראש")) || (quation.includes("הראש")) || (quation.includes("בראש")) || (quation.includes("מיגרנה"))) {
                 if (randomnum == 0) {
@@ -168,7 +171,7 @@ function botfunc() {
 
 
 
-        }, 1400);
+        }, 1800);
 
 
 
