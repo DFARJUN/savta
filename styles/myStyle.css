@@ -14,8 +14,10 @@
 /*/////////////////////////////////////////////////////////////////////*/
 /*///////////////////////// כללי //////////////////////////*/
 /*/////////////////////////////////////////////////////////////////////*/
-body {
+html {
     scroll-behavior: smooth;
+}
+body {
     direction: rtl;
 }
 
@@ -35,7 +37,7 @@ body {
     --hwwind: 0px;
     --zoomi:0px;
 }
-
+/*בחירת בצבע ורוד*/
 ::selection {
     background-color: rgba(255,54,162,0.99);
     color: black;
@@ -55,6 +57,21 @@ body {
     zoom: var(--zoomi);
     overflow-y:hidden;
 }
+
+
+/*גלילה צבעונית*/
+::-webkit-scrollbar {
+    width: 17px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--spink);
+    border-radius: 10px;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--spink-hover);
+    }
 
     /*/////////////////////////////////////////////////////////////////////*/
     /*///////////////////////// תפריט ניווט כללי //////////////////////////*/
@@ -508,7 +525,7 @@ bottom:51px;
     -webkit-text-stroke-color: black;
     FLOAT: RIGHT;
     MARGIN-RIGHT: 90PX;
-    animation: shadow-pulse 0.8s infinite;
+    animation: shadow-pulse 0.95s infinite;
     animation-timing-function: cubic-bezier(0, 0, 1, 0.99);
     z-index: 2;
     -webkit-animation-play-state: running;
@@ -2028,14 +2045,17 @@ display:block;
     width: 300px;
     display: inline-block;
     vertical-align: bottom;
-    margin: 5px 170px;
 }
+
 
 #mebot {
     background-image: url('../image/homepage/bot.png');
     background-size: 202px 220px;
     background-repeat: no-repeat;
     background-position: bottom right;
+    float: right;
+    right: 190px;
+    position: relative;
 }
 
 #answerbot {
@@ -2043,6 +2063,9 @@ display:block;
     background-size: 202px 220px;
     background-repeat: no-repeat;
     background-position: bottom left;
+    float: left;
+    left: 190px;
+    position: relative;
 }
 
 #mebot > div {
