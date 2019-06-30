@@ -8,9 +8,10 @@
     }
     html {
         width: CALCL(VAR(--WWIND)+15PX) !IMPORTANT;
-        height: VAR(--HWIND);
+        height: 100%;
         overflow: hidden;
         position: sticky;
+        min-width: 0;
     }
 
     #container > header > nav > ul > li>a{
@@ -25,13 +26,15 @@
         margin: 0 !important;
         WIDTH: CALCL(VAR(--WWIND)+15PX) !IMPORTANT;
         zoom: 0 !important;
+        overflow-x: hidden;
     }
     body {
-        height: VAR(--HWIND);
-        width: CALCL(VAR(--WWIND)+15PX) !IMPORTANT
+        height: 100%;
+        width: CALCL(VAR(--WWIND)+15PX) !IMPORTANT;
+        min-width: 0;
     }
     #allbotpage {
-        height: VAR(--HWIND);
+        height: 100%;
         width: CALCL(VAR(--WWIND)+15PX) !IMPORTANT
     }
     #h1und {
@@ -57,6 +60,7 @@
         bottom: 256px;
         right: -61px;
         background-position: bottom CENTER;
+        background-image:none;
     }
 
         #answerbot > div {
