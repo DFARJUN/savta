@@ -1,3 +1,7 @@
+/*/////////////////////////////////////////////////////////////////////*/
+/*///////////////////////// דף רספונסיבי לבוט //////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////*/
+
 @media screen and (max-width: 500px) {
     header {
         WIDTH: CALCL(VAR(--WWIND)+15PX) !IMPORTANT;
@@ -46,6 +50,7 @@
         background-image:none;
         margin:10px !important;
         float:right;
+        right:0;
     }
         #mebot > div {
             margin: 0px;
@@ -58,9 +63,10 @@
     #answerbot {
         position: relative;
         bottom: 256px;
-        right: -61px;
         background-position: bottom CENTER;
-        background-image:none;
+        background-image: none;
+        float: left;
+        LEFT: -56px;
     }
 
         #answerbot > div {

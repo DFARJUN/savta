@@ -39,7 +39,7 @@
     </ul>
     <div id="container" class="container">
         <header>
-            <nav id="allnav" aria-label="תפריט ראשי באתר">
+            <nav id="allnav" aria-label="תפריט ראשי באתר" role="תפריט">
                 <ul id="nav_inner" class="nav__list" aria-label="תפריט ראשי באתר">
                     <li><a id="logo" href="index.html" aria-label="לוגו עמוד הבית"></a></li>
                     <li class="has-drop">
@@ -86,7 +86,7 @@
                         </ul>
                     </li>
                     <li class="has-drop">
-                        <a aria-label="תפריט אב" href="#">אודות סבתא</a>
+                        <a id="here" aria-label="תפריט אב" href="#">אודות סבתא</a>
                         <ul class="submenu nav__list__drop" aria-label="תת תפריט">
                             <li><a href="about.html">מאחורי האתר סבתא</a></li>
                             <li><a href="contact.html">צרו קשר עם סבתא</a></li>
@@ -170,26 +170,26 @@
                         </div>
                     </div>
                 </li>
-                <li class="hovereffect">
+                <li class="hovereffect" id="aboutdor">
                     דור פרג'ון
                     <DIV class="dadrkk"></DIV>
                     <div class="overlay">
                         <div class="rotate">
                             <p class="group1">
-                                <a href="#">
+                                <a href="https://www.linkedin.com/in/farjundor/">
                                     <i class="fa fa-linkedin"></i>
                                 </a>
-                                <a href="#">
+                                <a href="https://www.facebook.com/d.farjun">
                                     <i class="fa fa-facebook"></i>
                                 </a>
                             </p>
                             <hr>
                             <hr>
                             <p class="group2">
-                                <a href="#">
+                                <a href="https://www.instagram.com/farjun/">
                                     <i class="fa fa-instagram"></i>
                                 </a>
-                                <a href="#">
+                                <a href="https://www.dorfarjun.com">
                                     <i class="fa fa-dribbble"></i>
                                 </a>
                             </p>
@@ -197,23 +197,29 @@
                     </div>
                 </li>
             </ul>
-            <h2 class="tafrith3">
-                האתר הוא חלק מפרויקט משותף לקורסים:
-            </h2>
-            <ul id="courses">
-                <li>פיתוח אתרי אינטרנט</li>
-                <li>איפיון חווית משתמש</li>
-                <li>עיצוב חווית משתמש</li>
-                <li>נגישות לאתרי אינטרנט</li>
-            </ul>
+            <section>
+                <h2 class="tafrith3">
+                    האתר הוא חלק מפרויקט משותף לקורסים:
+                </h2>
+                <ul id="courses">
+                    <li>פיתוח אתרי אינטרנט</li>
+                    <li>איפיון חווית משתמש</li>
+                    <li>עיצוב חווית משתמש</li>
+                    <li>נגישות לאתרי אינטרנט</li>
+                </ul>
+                <p class="hitcredit">בתואר ראשון לטכנולוגיות למידה במכון הטכנולוגי חולון</p>
+                <img class="hitcredit" src="image/HITLOGO.png" alt="לוגו hit" />
+            </section>
             <section class="abouthef">
                 <h2 class="tafrith3">האתר פותח ב</h2>
-                <img src="image/about/html@2x.png" />
+                <img src="image/about/html@2x.png" alt="גרף שפות התיכנות" />
             </section>
             <section class="abouthef">
                 <h2 class="tafrith3">הקוד היה ממש ארוך ועדיין...</h2>
-                <img src="image/about/we@2x.png" />
+                <img src="image/about/we@2x.png" alt="גרף כמה קוד כתבנו בעצמנו וכמה לא" />
             </section>
+
+
 
             <section>
                 <p id="downp"> מתים לדעת איך עשינו את זה? חוברת האיפיון של האתר זמינה <a id="downbtn" target="_blank" href="savta guideline.pdf">להורדה כאן</a></p>

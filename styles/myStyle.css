@@ -46,6 +46,12 @@ body {
     text-shadow: none;
 }
 
+:focus {
+    outline-color: var(--spink) !important;
+    outline-style: solid;
+    outline-width: 3px !important;
+}
+
 #container {
     width: var(--wwwind) !important;
     min-width: 1263px;
@@ -68,6 +74,7 @@ body {
 ::-webkit-scrollbar-thumb {
     background: var(--spink);
     border-radius: 10px;
+    box-shadow: inset 0 0 5px grey;
 }
 
 ::-webkit-scrollbar-track {
@@ -179,6 +186,7 @@ color:var(--sfont);
 #here {
     font-weight: bold;
     color: #000B6B !important;
+    text-decoration:underline;
 }
 
 
@@ -201,6 +209,12 @@ color:var(--sfont);
 
 .anotwork:hover{
     cursor:not-allowed !important;
+}
+
+nav a:focus {
+    outline-color: var(--sblue) !important;
+    outline-style: solid;
+    outline-width: 3px !important;
 }
 
 /*תפריט נגיש*/
@@ -578,9 +592,6 @@ background-position:right
     font-family: nehama;
     text-align: center;
     font-size: 32pt;
-    /*-webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 2.5PX;
-    -webkit-text-stroke-color: black;*/
     border-radius: 20px;
     display: inline-block;
     height: 44px;
@@ -739,16 +750,15 @@ background-position:right
 }
 
 .typewriter {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
     animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
     -webkit-animation-play-state: running;
     animation-play-state: running;
 }
 
-/* The typing effect */
 @keyframes typing {
     0% {
         width: 0
@@ -763,7 +773,6 @@ background-position:right
     }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
     from, to {
         border-color: transparent
@@ -848,6 +857,7 @@ article h1 {
     color:yellow;
 }
 
+/*תמונות ראשיות בעמודים*/
 #dogphoto {
     background-image: url('../image/dogs/dog.svg');
 }
@@ -1238,104 +1248,6 @@ a.skip {
         border-radius: 60px;
     }
 
-#loadpage {
-    width: 100vw !important;
-    height: 100vh !important;
-    background-image: url(../image/homepage/Untitled-1.gif);
-    background-size: auto 70vh;
-    position: fixed;
-    background-repeat: no-repeat;
-    z-index: 500;
-    background-color: VAR(--sblue);
-    background-position: center;
-    background-position-y: 20VH;
-    text-align: center;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
-}
-
-    #loadpage h1 {
-        font-family: 'Varela Round';
-        -webkit-text-fill-color: white;
-        -webkit-text-stroke-width: 1PX;
-        -webkit-text-stroke-color: black;
-        padding-top: 29PX;
-        font-size: 53PX;
-        FONT-WEIGHT: BOLD;
-    }
-
-.arakbt {
-    position: absolute;
-    height: 300px;
-    width: auto;
-    opacity: 0;
-}
-
-#arak {
-    position: fixed;
-    right: 52px;
-}
-
-#arak1 {
-    -webkit-transform: rotate(-10deg);
-    -moz-transform: rotate(-10deg);
-}
-#arak2 {
-    -webkit-transform: rotate(-7deg);
-    -moz-transform: rotate(-8deg);
-}
-#arak3 {
-    -webkit-transform: rotate(-4deg);
-    -moz-transform: rotate(-4deg);
-}
-#arak4 {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-}
-#arak5 {
-    -webkit-transform: rotate(4deg);
-    -moz-transform: rotate(4deg);
-}
-#arak6 {
-    -webkit-transform: rotate(7deg);
-    -moz-transform: rotate(7deg);
-}
-#arak7 {
-    -webkit-transform: rotate(10deg);
-    -moz-transform: rotate(10deg);
-}
-#arak13 {
-    -webkit-transform: rotate(-10deg);
-    -moz-transform: rotate(-10deg);
-}
-
-#arak12 {
-    -webkit-transform: rotate(-7deg);
-    -moz-transform: rotate(-8deg);
-}
-
-#arak11 {
-    -webkit-transform: rotate(-4deg);
-    -moz-transform: rotate(-4deg);
-}
-
-#arak10 {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-}
-
-#arak9 {
-    -webkit-transform: rotate(4deg);
-    -moz-transform: rotate(4deg);
-}
-
-#arak8 {
-    -webkit-transform: rotate(7deg);
-    -moz-transform: rotate(7deg);
-}
 
 figure figcaption {
     font-size: 20px;
@@ -1465,7 +1377,6 @@ figure {
 }
 
     .tooltip .tooltiptext {
-        /*visibility: hidden;*/
         width: 250px;
         background-color: var(--spurple-hover);
         color: white;
@@ -1826,6 +1737,10 @@ iframe {
         background-image: url('../image/about/PHOTO.png');
         background-size: 200px 200px;
         margin-bottom: 30px;
+    }
+
+    #behindsavta #aboutdor {
+        background-image: url('../image/about/dor.jpg');
     }
 
 
@@ -2193,3 +2108,20 @@ transform: rotate(-2deg);
         margin: 20px;
         font-size: 20px;
     }
+
+/*/////////////////////////////////////////////////////////////////////*/
+/*///////////////////////// דפים נוספים //////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////*/
+
+/*דף אודות*/
+
+p.hitcredit {
+    font-size: 20px;
+    margin-top:10px;
+    display:inline-block;
+    margin-right:160px;
+}
+
+img.hitcredit {
+    height: 77px;
+}
