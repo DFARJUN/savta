@@ -123,17 +123,19 @@
                 <input type="hidden" id="myEmail" name="name" value="dfff.lahav@gmail.com">
                 <label for="FirstName">
                     <span class="labelNames">*שם מלא:</span>
-                    <input required type="text" id="FirstName" placeholder="כי לפעמים היא שוכחת" />
+                    <input onblur="checkename()" required type="text" id="FirstName" placeholder="כי לפעמים היא שוכחת" />
+                    <span id="nameerror" class="errormasege"></span>
                 </label>
 
                 <label for="EMail">
                     <span class="labelNames">*איימייל: </span>
-                    <br />
-                    <input type="email" id="EMail" placeholder="אפשר גם תא דואר" required />
+                    <input onblur="checkemail()" type="email" id="EMail" placeholder="אפשר גם תא דואר" required />
+                    <span id="emailerror" class="errormasege"></span>
                 </label>
                 <label for="myMS">
                     <span class="labelNames">*מה תרצו להגיד לסבתא? </span>
-                    <textarea id="myMS" required></textarea>
+                    <textarea onblur="checkmassege()" id="myMS" required></textarea>
+                    <span id="massegeerror" class="errormasege"></span>
                 </label>
                 <h2>אלו היו חובה. אבל <span class="stam">אלה לא</span></h2>
                 <label for="shtut">

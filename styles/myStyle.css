@@ -1441,11 +1441,21 @@ label{
 input, textarea {
     display: block;
     width: 200px;
+    display:inline-block;
 }
 
-.labelNames{
-    font-size:20px;
-    font-weight:bold;
+.errormasege {
+    color: #C20000;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: white;
+    display:inline-block;
+}
+
+.labelNames {
+    font-size: 20px;
+    font-weight: bold;
+    display:block;
 }
 
 

@@ -185,3 +185,39 @@ function showAjaxLoader() {
 function hideAjaxLoader() {
     $("div#ajaxLoaderDiv").fadeOut();
 }
+
+
+ function checkemail() {
+    var eemail = document.getElementById("EMail").value;
+     if (eemail == "") {
+         document.getElementById("EMail").style.border = "3px solid red";
+         document.getElementById("emailerror").innerHTML = "אוי! נראה ששכחת למלא את זה."
+     }
+     else {
+         document.getElementById("EMail").style.border = "none";
+         document.getElementById("emailerror").innerHTML = ""
+
+     }
+} function checkename() {
+    var ttext = document.getElementById("FirstName").value;
+     if (ttext == "") {
+         document.getElementById("FirstName").style.border = "3px solid red";
+         document.getElementById("nameerror").innerHTML = "אוי! נראה ששכחת למלא את זה."
+     }
+     else {
+         document.getElementById("FirstName").style.border = "none";
+         document.getElementById("nameerror").innerHTML = ""
+
+     }
+} function checkmassege() {
+    var mmys = document.getElementById("myMS").value;
+     if (mmys == "") {
+         document.getElementById("myMS").style.border = "3px solid red";
+         document.getElementById("massegeerror").innerHTML = "אוי! נראה ששכחת למלא את זה."
+     }
+     else {
+         document.getElementById("myMS").style.border = "none";
+         document.getElementById("massegeerror").innerHTML = ""
+
+     }
+}
