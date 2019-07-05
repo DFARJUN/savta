@@ -298,6 +298,13 @@ nav ol {
         z-index: 1;
     }
 
+.has-drop:hover .nav__list__drop, {
+    opacity: 1;
+    transform: translateY(0px) translatex(-10px);
+    height: auto;
+    z-index: 1;
+}
+
 #stopallbtn {
     display: inline-block;
 }
