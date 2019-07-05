@@ -1,3 +1,4 @@
+/*פונטים*/
 @font-face {
     font-family: 'nehama';
     src: url('../font/nehama-webfont.woff') format('woff');
@@ -35,7 +36,7 @@ body {
     --sgreen-hover: #539764;
     --wwwind: 0px;
     --hwwind: 0px;
-    --zoomi:0px;
+    --zoomi: 0px;
 }
 /*בחירת בצבע ורוד*/
 ::selection {
@@ -45,9 +46,9 @@ body {
     -webkit-text-fill-color: black;
     text-shadow: none;
 }
-
+/*פוקוס ורוד*/
 :focus {
-    outline-color: var(--spink) !important;
+    outline-color: #ff36a2 !important;
     outline-style: solid;
     outline-width: 3px !important;
 }
@@ -59,7 +60,7 @@ body {
     padding: 0 0;
     font-family: 'Varela Round';
     font-weight: normal;
-    color: var(--sfont);
+    color: #1A1D1E;
     zoom: var(--zoomi);
     overflow-y:hidden;
 }
@@ -72,7 +73,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--spink);
+    background: #ff36a2;
     border-radius: 10px;
     box-shadow: inset 0 0 5px grey;
 }
@@ -84,7 +85,7 @@ body {
 }
 
     ::-webkit-scrollbar-thumb:hover {
-        background: var(--spink-hover);
+        background: #c03c7b;
     }
 
     /*/////////////////////////////////////////////////////////////////////*/
@@ -92,7 +93,7 @@ body {
     /*/////////////////////////////////////////////////////////////////////*/
 
     #container > header {
-        background-color: var(--spink);
+        background-color: #ff36a2;
         height: 50px;
         position: fixed;
         top: 0;
@@ -102,6 +103,7 @@ body {
         z-index: 100;
     }
 
+/*העלמת תפריט כשעושים זום*/
 @media screen and (max-width: 800px) {
     #container > header {
         position: relative;
@@ -133,7 +135,7 @@ display:inline-block;
         margin-top: 15px;
     }
 #container > header > nav > ul > li > a  {
-color:var(--sfont);
+color:#1A1D1E;
     }
 
 #container>header>nav>ul>li:nth-child(n+3){
@@ -164,8 +166,8 @@ color:var(--sfont);
     line-height: 35px;
     list-style: none;
     text-align: center;
-    background-color: var(--spink);
-    color: var(--sfont);
+    background-color: #ff36a2;
+    color: #1A1D1E;
     border-radius: 4px;
     margin-right: -10px;
 }
@@ -177,8 +179,8 @@ color:var(--sfont);
     line-height: 35px;
     list-style: none;
     text-align: center;
-    background-color: var(--spink);
-    color: var(--sfont);
+    background-color: #ff36a2;
+    color: #1A1D1E;
     border-radius: 4px;
     margin-right: -10px;
 }
@@ -195,7 +197,7 @@ color:var(--sfont);
 }
 
 #container>header nav ul li ul li a {
-        color: var(--sfont);
+        color: #1A1D1E;
         width:120px;
         height:35px;
         display:inline-block;
@@ -212,7 +214,7 @@ color:var(--sfont);
 }
 
 nav a:focus {
-    outline-color: var(--sblue) !important;
+    outline-color: #3cc1f8 !important;
     outline-style: solid;
     outline-width: 3px !important;
 }
@@ -304,7 +306,7 @@ nav ol {
 /*כפתור הפעל וכבה תנועה*/
 .playstop {
     background-color: transparent;
-    color: var(--sfont);
+    color: #1A1D1E;
     font-family: nehama;
     font-size: 18px;
     border-radius: 40px;
@@ -318,9 +320,26 @@ nav ol {
 }
 
 .playstop:hover {
-    background-color: var(--spink-hover);
+    background-color: #c03c7b;
     cursor: pointer;
 }
+
+/*לוגו אתר קטן בתפריט*/
+#logo {
+    width: 42px;
+    height: 42px;
+    background-image: url('../image/logosprite.png');
+    background-position: right;
+    background-size: 84px 42px;
+    display: inline-block;
+    position: absolute;
+    top: 3px;
+}
+
+    #logo:hover {
+        cursor: pointer !important;
+        background-position: left;
+    }
 
 /*/////////////////////////////////////////////////////////////////////*/
 /*///////////////////////// פוטר //////////////////////////*/
@@ -328,7 +347,7 @@ nav ol {
 
 
 #container > footer {
-    background-color: var(--sgreen);
+    background-color: #4FC97C;
     padding-bottom: 10px;
     height: 300px;
     overflow: hidden;
@@ -370,7 +389,7 @@ nav ol {
         display: inline-block;
         vertical-align: top;
         text-align: right;
-        color: var(--sfont) !important;
+        color: #1A1D1E !important;
         font-weight: bold;
     }
 
@@ -381,14 +400,14 @@ nav ol {
         }
 
         #container > footer > ul > li > a {
-            color: var(--sfont) !important;
+            color: #1A1D1E !important;
             padding-bottom: 10px;
         }
 
         #container > footer > ul > li > ul > li > a {
-            color: var(--sfont) !important;
+            color: #1A1D1E !important;
         }
-
+/*קישורים לא זמינים*/
 .aiswork {
     text-decoration: underline;
     cursor: pointer;
@@ -404,12 +423,29 @@ nav ol {
     text-decoration: none;
 }
 
+/*זכויות יוצרים*/
+#freepikdiv {
+    background-image: url(../image/tips/freepik.svg);
+    background-size: 347px 300px;
+    background-position-y: -58px;
+    width: 347px;
+    height: 244px;
+    padding: 58px 43px 10px 50px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    bottom: -11px;
+    left: 24px;
+    text-align: center;
+}
+
 /*/////////////////////////////////////////////////////////////////////*/
 /*///////////////////////// דף הבית //////////////////////////*/
 /*/////////////////////////////////////////////////////////////////////*/
 
+/*סקשן פתיחה*/
 #opennigsec {
-    background-color: var(--sblue);
+    background-color: #3cc1f8;
     background-image: url('../image/homepage/Artboard 1.png');
     background-size: auto;
     background-position: center;
@@ -419,6 +455,7 @@ nav ol {
     display: inline-block;
 }
 
+/*גודל כללי לכל הסקשנים*/
 .sec300 {
     height: 400px;
     width: var(--wwwind);
@@ -426,20 +463,17 @@ nav ol {
     max-width: 1384px;
 }
 
+/*בננה*/
 #bananasec {
-    background-color: var(--spurple);
+    background-color: #B30098;
 }
 
-#bananasec {
-    background: -moz-linear-gradient(45deg, rgba(70,219,224,0.45) 1%, rgba(60,206,229,1) 100%);  FF3.6-15
-    background: -webkit-linear-gradient(45deg, rgba(70,219,224,0.45) 1%,rgba(60,206,229,1) 100%);  Chrome10-25,Safari5.1-6
-    background: linear-gradient(45deg, rgba(70,219,224,0.45) 1%,rgba(60,206,229,1) 100%);  W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
-}
-
+/*אפניים*/
 #bikesec {
-    background-color: var(--syellow);
+    background-color: #ffeb01;
 }
 
+/*תמונת אופניים*/
 #bike {
     background-image: url('../image/homepage/bike.png');
     background-size: 550px 387px;
@@ -468,21 +502,7 @@ top:-50px;
     }
 }
 
-#logo {
-    width: 42px;
-    height: 42px;
-    background-image: url('../image/logo.png');
-    background-size: 42px 42px;
-    display: inline-block;
-    position: absolute;
-    top: 3px;
-}
-
-    #logo:hover {
-        cursor: pointer !important;
-        background-image: url('../image/logoh.png');
-    }
-
+/*לוגו ראשי כותרת H1*/
 #h1logo {
     font-weight: bold;
     color: black;
@@ -521,12 +541,14 @@ top:-50px;
         }
 
 
+/*הצפות עמוד בית*/
 #hazafot{
 position:relative;
 bottom:51px;
     
 }
 
+/*כפתורים של ההצפות*/
 .abtngif {
     height: 120px;
     background-image: url('../image/homepage/assent.png');
@@ -575,6 +597,22 @@ background-position:right
     }
 }
 
+#hazafot h2 {
+    background-color: black;
+    color: #3cc1f8;
+    font-family: 'Varela Round';
+    FONT-SIZE: 24PX;
+    WIDTH: 680PX;
+    text-align: center;
+    FONT-WEIGHT: BOLD;
+    margin-bottom: 0;
+}
+
+#shiul {
+    padding-top: 50px;
+}
+
+/*נקודות מאחורי הבננה*/
 #dotsban {
     background-image: url('../image/homepage/dots.svg');
     background-size: 600px 600px;
@@ -587,6 +625,7 @@ background-position:right
     left:50px;
 }
 
+/*כפתורים בקרוסלה*/
 .btncrusle {
     width: 250px;
     font-family: nehama;
@@ -607,23 +646,24 @@ background-position:right
     text-decoration:none;
 }
 
+/*כפתורים */
 #btnbanana {
-    background-color: var(--sblue);
-    color:var(--sfont);
+    background-color: #3cc1f8;
+    color:#1A1D1E;
 }
 
-#btnbanana:hover {
-    background-color: var(--sblue-hover);
-}
+    #btnbanana:hover, #btnbanana:focus {
+        background-color: #2f95a1;
+    }
 
 #btnbike {
-    background-color: var(--spurple);
-    color: var(--sblue);
+    background-color: #B30098;
+    color: #3cc1f8;
 }
 
-#btnbike:hover {
-    background-color: var(--spurple-hover);
-}
+    #btnbike:hover, #btnbike:focus {
+        background-color: #922977;
+    }
 
 #banana {
     background-image: url('../image/homepage/banana.svg');
@@ -648,20 +688,21 @@ background-position:right
     line-height: 50px;
 }
 
+/*כותרות ראשיות בבקרוסלה*/
 #bananaspan {
     color: yellow;
     display: block;
     font-size: 78px;
     line-height: 95px;
     margin-right: 61px;
-    text-shadow: 0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black, 3px -3px 0 var(--sblue),8px -8px 0 var(--sblue),13px -13px 0 var(--sblue);
+    text-shadow: 0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black, 3px -3px 0 #3cc1f8,8px -8px 0 #3cc1f8,13px -13px 0 #3cc1f8;
 }
 #bikespan {
-    color: var(--spurple);
+    color: #B30098;
     display: block;
     font-size: 78px;
     margin-right: 61px;
-    text-shadow: 0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black, 3px -3px 0 var(--sblue),8px -8px 0 var(--sblue),13px -13px 0 var(--sblue);
+    text-shadow: 0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black, 3px -3px 0 #3cc1f8,8px -8px 0 #3cc1f8,13px -13px 0 #3cc1f8;
     line-height: 95px;
 }
 
@@ -679,20 +720,21 @@ background-position:right
     margin-right: 169px;
 }
 
+/*בוט קרוסלה*/
 #botsec {
-    background-color: var(--sgreen);
+    background-color: #4FC97C;
     overflow: hidden;
     background-image: url('../image/homepage/photpht.png');
     background-size: 100% auto;
 }
 
 #btnbot{
-    background-color:var(--spink);
-    color:var(--sfont);
+    background-color:#ff36a2;
+    color:#1A1D1E;
 }
 
     #btnbot:hover {
-        background-color: var(--spink-hover);
+        background-color: #c03c7b;
     }
 
 @keyframes banana-dance {
@@ -713,23 +755,7 @@ background-position:right
     }
 }
 
-
-
-#hazafot h2 {
-    background-color: black;
-    color: VAR(--sblue);
-    font-family: 'Varela Round';
-    FONT-SIZE: 24PX;
-    WIDTH: 680PX;
-    text-align: center;
-    FONT-WEIGHT: BOLD;
-    margin-bottom: 0;
-}
-
-#shiul{
-    padding-top:50px;
-}
-
+/*קרוסלה*/
 .carousel-indicators li {
     width: 15px;
     height: 15px;
@@ -749,6 +775,7 @@ background-position:right
     width: 10%;
 }
 
+/*אפקט מכונת כתיבה*/
 .typewriter {
     overflow: hidden;
     border-right: .15em solid orange;
@@ -782,6 +809,15 @@ background-position:right
         border-color: orange;
     }
 }
+
+/*סקשן לייצוג אינטראקטיבי*/
+#interactivesec {
+    background: -moz-radial-gradient(center, ellipse cover, rgba(101,219,236,1) 1%, rgba(65,157,226,1) 99%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(101,219,236,1) 1%,rgba(65,157,226,1) 99%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(101,219,236,1) 1%,rgba(65,157,226,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    overflow: hidden;
+}
+
 
 /*/////////////////////////////////////////////////////////////////////*/
 /*///////////////////////// דפי תוכן //////////////////////////*/
@@ -818,6 +854,7 @@ article section p{
     font-size:14px;
 }
 
+/*מסגרת לבנה (עם אופציה להוספת תמונה)*/
 .whitesec {
     width: 900px;
     background-color: white;
@@ -841,6 +878,7 @@ article section p{
     height:240px;
 }
 
+/*התרופה עצמה*/
 .medicen {
     display: inline-block;
     width: 500px;
@@ -918,7 +956,7 @@ article header {
     height: 274px;
 }
 
-
+/*טיפים*/
 
 .tip {
     display: inline-block;
@@ -1004,6 +1042,7 @@ article > h2 {
 font-size:18px;
 }
 
+/*שורה סופית*/
 .finishline{
     text-align:center;
     padding-top:20px;
@@ -1016,7 +1055,7 @@ font-size:18px;
     height:260px !important;
 }
 
-
+/*תמונות למסגרת (ככרגע אין)*/
 
 
 .arak {
@@ -1064,6 +1103,173 @@ font-size:18px;
     background-image: url('../image/ICON/parasite (1).png');
 }
 
+/*תפריט ממולץ כאבבטן*/
+.stotafrit {
+    width: 900px;
+    padding-right: 0px;
+}
+
+    .stotafrit li {
+        width: 200px;
+        margin: 0px 10.5px 40px 10.5px;
+        padding-top: 200px;
+        background-position: top;
+        background-repeat: no-repeat;
+        list-style: none;
+        display: inline-block;
+        text-align: center;
+        background-size: 200px 200px;
+        font-size: 20px;
+    }
+
+.yeseat li:nth-child(1) {
+    background-image: url('../image/stomech/yesbanana@2x.png');
+}
+
+.yeseat li:nth-child(2) {
+    background-image: url('../image/stomech/yessumar@2x.png');
+}
+
+.yeseat li:nth-child(3) {
+    background-image: url('../image/stomech/yesapple@2x.png');
+}
+
+.yeseat li:nth-child(4) {
+    background-image: url('../image/stomech/yesrice@2x.png');
+}
+
+.noteat li:nth-child(1) {
+    background-image: url('../image/stomech/notoil@2x.png');
+}
+
+.noteat li:nth-child(2) {
+    background-image: url('../image/stomech/notorange@2x.png');
+}
+
+.noteat li:nth-child(3) {
+    background-image: url('../image/stomech/notmilk@2x.png');
+}
+
+.noteat li:nth-child(4) {
+    background-image: url('../image/stomech/notcoffee@2x.png');
+}
+
+.tafrith3 {
+    width: 900px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#seven210preiod {
+    background-image: url('../image/preiod/Artboard 1@2x.png');
+    background-size: 887px 115px;
+    padding-top: 10px;
+    background-position: bottom;
+    padding-bottom: 115px;
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 20px;
+}
+
+/*שיעול אייקונים*/
+
+.shiukcuos li {
+    margin: 30px 10.5px;
+}
+
+    .shiukcuos li:nth-child(1) {
+        background-image: url('../image/shiul/shiul1@2x.png');
+    }
+
+    .shiukcuos li:nth-child(2) {
+        background-image: url('../image/shiul/shiul2@2x.png');
+    }
+
+    .shiukcuos li:nth-child(3) {
+        background-image: url('../image/shiul/shiul3@2x.png');
+    }
+
+    .shiukcuos li:nth-child(4) {
+        background-image: url('../image/shiul/shiul4@2x.png');
+    }
+
+    .shiukcuos li:nth-child(5) {
+        background-image: url('../image/shiul/shiul5@2x.png');
+    }
+
+    .shiukcuos li:nth-child(6) {
+        background-image: url('../image/shiul/shiul6@2x.png');
+    }
+
+    .shiukcuos li:nth-child(7) {
+        background-image: url('../image/shiul/shiul7@2x.png');
+    }
+
+    .shiukcuos li:nth-child(8) {
+        background-image: url('../image/shiul/shiul8@2x.png');
+    }
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    opacity: 1 !important;
+    z-index: 2;
+    font-family: 'Varela Round';
+}
+
+    .tooltip .tooltiptext {
+        width: 250px;
+        background-color: #922977;
+        color: white;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: 230px;
+        left: 2000Px;
+        margin-left: -60px;
+        font-weight: normal;
+        font-family: 'Varela Round';
+        font-size: 14px !important;
+    }
+
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent #922977 transparent;
+        }
+
+    .tooltip:hover .tooltiptext {
+        left: 35PX;
+    }
+
+    .tooltip:focus .tooltiptext {
+        left: 35PX;
+    }
+
+
+    .tooltip:hover {
+        font-weight: bold;
+    }
+
+    .tooltip:focus {
+        font-weight: bold;
+    }
+
+/*פונט משחקי הכס*/
+#gotfont {
+    font-family: 'Game of Thrones';
+    font-size: 25px;
+    padding-left: 10px;
+}
 
 /*/////////////////////////////////////////////////////////////////////*/
 /*///////////////////////// דף לא נמצא //////////////////////////*/
@@ -1071,7 +1277,7 @@ font-size:18px;
 #undifiendsec {
     background-image: url('../image/undifiend/Untitled-2.png');
     background-position: bottom right;
-    background-color: var(--sblue);
+    background-color: #3cc1f8;
     background-size: 100% auto;
     height: 450px;
     overflow: hidden;
@@ -1166,36 +1372,6 @@ top:50px;
 
 
 
-
-#interactivesec {
-    background: -moz-radial-gradient(center, ellipse cover, rgba(101,219,236,1) 1%, rgba(65,157,226,1) 99%); /* FF3.6-15 */
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(101,219,236,1) 1%,rgba(65,157,226,1) 99%); /* Chrome10-25,Safari5.1-6 */
-    background: radial-gradient(ellipse at center, rgba(101,219,236,1) 1%,rgba(65,157,226,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-overflow:hidden;
-}
-
-#freepikdiv {
-    background-image: url(../image/tips/freepik.svg);
-    background-size: 347px 300px;
-    background-position-y: -58px;
-    width: 347px;
-    height: 244px;
-    padding: 58px 43px 10px 50px;
-    display: inline-block;
-    vertical-align: top;
-    position: relative;
-    bottom: -11px;
-    left: 24px;
-    text-align: center;
-}
-
-#gotfont {
-    font-family: 'Game of Thrones';
-    font-size: 25px;
-    padding-left: 10px;
-}
-
-
 .acssesh {
     text-indent: -10000px;
     direction: ltr;
@@ -1270,157 +1446,8 @@ figure {
     width: 850px;
 }
 
-.stotafrit {
-    width: 900px;
-    padding-right: 0px;
-}
 
-    .stotafrit li {
-        width: 200px;
-        margin: 0px 10.5px 40px 10.5px;
-        padding-top: 200px;
-        background-position: top;
-        background-repeat: no-repeat;
-        list-style: none;
-        display: inline-block;
-        text-align: center;
-        background-size: 200px 200px;
-        font-size: 20px;
-    }
-
-.yeseat li:nth-child(1) {
-    background-image: url('../image/stomech/yesbanana@2x.png');
-}
-
-.yeseat li:nth-child(2) {
-    background-image: url('../image/stomech/yessumar@2x.png');
-}
-
-.yeseat li:nth-child(3) {
-    background-image: url('../image/stomech/yesapple@2x.png');
-}
-
-.yeseat li:nth-child(4) {
-    background-image: url('../image/stomech/yesrice@2x.png');
-}
-
-.noteat li:nth-child(1) {
-    background-image: url('../image/stomech/notoil@2x.png');
-}
-
-.noteat li:nth-child(2) {
-    background-image: url('../image/stomech/notorange@2x.png');
-}
-
-.noteat li:nth-child(3) {
-    background-image: url('../image/stomech/notmilk@2x.png');
-}
-
-.noteat li:nth-child(4) {
-    background-image: url('../image/stomech/notcoffee@2x.png');
-}
-
-.tafrith3 {
-    width: 900px;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-#seven210preiod {
-    background-image: url('../image/preiod/Artboard 1@2x.png');
-    background-size: 887px 115px;
-    padding-top: 10px;
-    background-position: bottom;
-    padding-bottom: 115px;
-    background-repeat: no-repeat;
-    background-color: white;
-    border-radius: 20px;
-}
-
-.shiukcuos li{
-    margin:30px 10.5px;
-}
-
-.shiukcuos li:nth-child(1) {
-    background-image: url('../image/shiul/shiul1@2x.png');
-}
-.shiukcuos li:nth-child(2) {
-    background-image: url('../image/shiul/shiul2@2x.png');
-}
-.shiukcuos li:nth-child(3) {
-    background-image: url('../image/shiul/shiul3@2x.png');
-}
-.shiukcuos li:nth-child(4) {
-    background-image: url('../image/shiul/shiul4@2x.png');
-}
-.shiukcuos li:nth-child(5) {
-    background-image: url('../image/shiul/shiul5@2x.png');
-}
-.shiukcuos li:nth-child(6) {
-    background-image: url('../image/shiul/shiul6@2x.png');
-}
-.shiukcuos li:nth-child(7) {
-    background-image: url('../image/shiul/shiul7@2x.png');
-}
-.shiukcuos li:nth-child(8) {
-    background-image: url('../image/shiul/shiul8@2x.png');
-}
-
-.tooltip {
-    position: relative;
-    display: inline-block;
-    opacity: 1 !important;
-    z-index:2;
-    font-family:'Varela Round';
-}
-
-    .tooltip .tooltiptext {
-        width: 250px;
-        background-color: var(--spurple-hover);
-        color: white;
-        text-align: center;
-        border-radius: 6px;
-        padding: 5px 0;
-        position: absolute;
-        z-index: 1;
-        top: 230px;
-        left: 2000Px;
-        margin-left: -60px;
-        font-weight:normal;
-        font-family:'Varela Round';
-        font-size:14px !important;
-    }
-
-        .tooltip .tooltiptext::after {
-            content: "";
-            position: absolute;
-            bottom: 100%;
-            left: 50%;
-            margin-left: -5px;
-            border-width: 5px;
-            border-style: solid;
-            border-color: transparent transparent var(--spurple-hover) transparent;
-        }
-
-    .tooltip:hover .tooltiptext {
-        left:35PX;
-    }
-
-    .tooltip:focus .tooltiptext {
-        left: 35PX;
-    }
-
-
-    .tooltip:hover {
-        font-weight: bold;
-    }
-
-    .tooltip:focus {
-        font-weight: bold;
-    }
-
+/*דף צור קשר*/
 form {
     width: 900px;
     height: 500px;
@@ -1473,7 +1500,7 @@ input, textarea {
     line-height: 30px;
     filter: drop-shadow( 4px 4px 2px rgba(0, 0, 0, 0.8));
     -webkit-filter: drop-shadow( 4px 4px 2px rgba(0, 0, 0, 0.8));
-    background-color: var(--spink);
+    background-color: #ff36a2;
     color: black;
     border: none;
 }
@@ -1491,7 +1518,7 @@ form h2 {
 }
 
 .stam {
-    color: var(--spurple-hover);
+    color: #922977;
 }
 
 #feedback {
@@ -1529,7 +1556,7 @@ form h2 {
     display: block;
     font-size: 78px;
     margin-right: 61px;
-    text-shadow:3px -3px 0 var(--syellow),8px -8px 0 var(--syellow);
+    text-shadow:3px -3px 0 #ffeb01,8px -8px 0 #ffeb01;
     line-height: 95px;
 }
 
@@ -1548,11 +1575,11 @@ form h2 {
 #interactivesec .btncrusle {
     position: relative;
     top: 60px;
-    background-color: var(--syellow);
+    background-color: #ffeb01;
 }
 
 .footerbtn {
-    background-color: var(--sgreen);
+    background-color: #4FC97C;
     border: 1px solid black;
     border-radius: 33px;
     width: 200px;
@@ -1566,7 +1593,7 @@ form h2 {
 }
 
 .footerbtn:hover, .footerbtn:focus{
-    background-color:var(--sgreen-hover);
+    background-color:#539764;
     color:black;
     text-decoration:none;
     cursor:pointer !important;
@@ -1655,7 +1682,7 @@ iframe {
 }
 
 #interactivebtn:hover{
-    background-color:var(--sblue-hover);
+    background-color:#2f95a1;
     text-decoration:none;
 }
 
@@ -1963,7 +1990,7 @@ display:block;
 }
 
 #allbotpage {
-    background-color: var(--sblue);
+    background-color: #3cc1f8;
     background-size: 100% auto;
     height: 450px;
     overflow: hidden;
@@ -2023,7 +2050,7 @@ transform: rotate(-2deg);
     top: 18px;
     border-radius: 14px;
     transform: rotate(-2deg);
-    background-color: var(--spink);
+    background-color: #ff36a2;
     border: none;
     width: 132px;
     margin: 10px 136px;
@@ -2040,7 +2067,7 @@ transform: rotate(-2deg);
 }
 
 #botbut:hover, #botbut:focus {
-    background-color: var(--spink-hover);
+    background-color: #c03c7b;
     cursor:pointer;
 }
 
@@ -2055,7 +2082,7 @@ transform: rotate(-2deg);
     margin-right: 35px;
     border-radius: 14px;
     transform: rotate(2deg);
-    background-color: var(--spurple);
+    background-color: #B30098;
     border: none;
     width: 132px;
     margin: 10px 136px;
@@ -2072,16 +2099,16 @@ transform: rotate(-2deg);
     left: -2px;
 }
 
-    #bottopage:hover, #bottopage:focus{
-        background-color:var(--spurple-hover);
+    #bottopage:hover, #bottopage:focus {
+        background-color: #922977;
     }
 
     #interactivesec .btncrusle:hover, #interactivesec .btncrusle:focus {
-        background-color: var(--syellow-hover);
+        background-color: #c3ae33;
     }
 
 #Sendbtn:hover,#Sendbtn:focus{
-    background-color:var(--spink-hover);
+    background-color:#c03c7b;
     cursor:pointer;
 }
 
@@ -2101,13 +2128,13 @@ transform: rotate(-2deg);
     line-height: 29px;
     filter: drop-shadow( 4px 4px 2px rgba(0, 0, 0, 0.8));
     -webkit-filter: drop-shadow( 4px 4px 2px rgba(0, 0, 0, 0.8));
-    background-color: var(--spink);
+    background-color: #ff36a2;
     color: black;
     margin:10px;
 }
 
     #downbtn:focus, #downbtn:hover{
-        background-color:var(--spink-hover);
+        background-color:#c03c7b;
         text-decoration:none;
     }
 
