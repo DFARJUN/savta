@@ -1539,16 +1539,15 @@ form h2 {
 }
 
 #cupoftea {
-    background-image: url('../image/homepage/kisspng3-green-tea-coffee-iced-tea-lemon-tea-png-transparent-image-5a78f0e6efdf76.7803481515178754309825.png');
-    background-size: 450px 361px;
+    background-image: url(../image/homepage/TEA.png);
+    background-size: 481px 423px;
     width: 450px;
     height: 361px;
     position: relative;
-    bottom: 258px;
+    bottom: 278px;
     left: 33px;
     float: left;
-    opacity: 0.8;
-    z-index:20;
+    z-index: 20;
 }
 
 #teaspan {
@@ -1690,8 +1689,8 @@ iframe {
     position: relative;
     height: 200px;
     width: 200px;
-    right: 171px;
-    bottom: 253px;
+    right: 138px;
+    bottom: 250px;
     animation: spoon-dance 4s infinite;
     animation-timing-function: cubic-bezier(0, 0, 1, 1);
     background-image: url(../image/homepage/lemon.png);
@@ -1699,7 +1698,7 @@ iframe {
     z-index: 1;
     -webkit-animation-play-state: running;
     animation-play-state: running;
-    float:left;
+    float: left;
 }
 
 
