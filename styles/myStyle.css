@@ -162,7 +162,6 @@ color:#1A1D1E;
     width: 130px;
     padding: 13px 0 0 0;
     font-size: 10pt;
-    height: auto;
     line-height: 35px;
     list-style: none;
     text-align: center;
@@ -213,7 +212,7 @@ color:#1A1D1E;
     cursor:not-allowed !important;
 }
 
-nav a:focus {
+header a:focus {
     outline-color: #3cc1f8 !important;
     outline-style: solid;
     outline-width: 3px !important;
@@ -279,7 +278,7 @@ nav ol {
     top: 100%;
     opacity: 0;
     transform: translateY(-20px);
-    height: 1px !important;
+    height: 1px;
     overflow: hidden;
     z-index: 1;
 }
@@ -295,7 +294,7 @@ nav ol {
     .nav__list__drop:focus-within {
         opacity: 1;
         transform: translateY(0px) translatex(-10px);
-        height: auto !important;
+        height: auto;
         z-index: 1;
     }
 
@@ -614,7 +613,7 @@ background-position:right
 
 /*נקודות מאחורי הבננה*/
 #dotsban {
-    background-image: url('../image/homepage/dots.svg');
+    background-image: url('../image/homepage/dots.png');
     background-size: 600px 600px;
     width: 400px;
     height: 400px;
@@ -666,7 +665,7 @@ background-position:right
     }
 
 #banana {
-    background-image: url('../image/homepage/banana.svg');
+    background-image: url('../image/homepage/banana.png');
     background-size: 450px 450px;
     animation: banana-dance 1.5s infinite;
     animation-timing-function: cubic-bezier(0, 0, 1, 0.99);
