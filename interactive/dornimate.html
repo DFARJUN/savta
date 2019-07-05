@@ -13,8 +13,18 @@
     <meta name="authoring-tool" content="Adobe_Animate_CC">
     <title>ייצוג אינטראקטיבי -אתר סבתא</title>
     <link rel="icon" href="../image/favicon.png" type="image/gif" sizes="16x16">
-
     <!-- write your code here -->
+    <style>
+
+        #animation_container {
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+    </style>
     <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
     <script src="dornimate.js"></script>
     <script>
@@ -174,7 +184,7 @@
                     stage.tickOnUpdate = true;
                 }
             }
-            makeResponsive(true, 'both', false, 1);
+            makeResponsive(true, 'both', true, 1);
             AdobeAn.compositionLoaded(lib.properties.id);
             fnStartAnimation();
         }
