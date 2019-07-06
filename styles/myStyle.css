@@ -45,13 +45,15 @@ body {
     -webkit-text-stroke: orchid;
     -webkit-text-fill-color: black;
     text-shadow: none;
-}
+}  
+
 /*פוקוס ורוד*/
-:focus {
+
+:focus{
     outline-color: #ff36a2 !important;
-    outline-style: solid;
-    outline-width: 3px !important;
+    outline-style: auto;
 }
+
 
 #container {
     width: var(--wwwind) !important;
@@ -214,9 +216,11 @@ color:#1A1D1E;
 
 header a:focus, header input:focus {
     outline-color: #3cc1f8 !important;
-    outline-style: solid;
+    outline-style:auto;
     outline-width: 3px !important;
 }
+
+
 
 /*תפריט נגיש*/
 
