@@ -212,7 +212,7 @@ color:#1A1D1E;
     cursor:not-allowed !important;
 }
 
-header a:focus {
+header a:focus, header input:focus {
     outline-color: #3cc1f8 !important;
     outline-style: solid;
     outline-width: 3px !important;
@@ -325,7 +325,7 @@ nav ol {
     display: none;
 }
 
-.playstop:hover {
+.playstop:hover , .playstop:focus {
     background-color: #c03c7b;
     cursor: pointer;
 }
@@ -342,7 +342,7 @@ nav ol {
     top: 3px;
 }
 
-    #logo:hover {
+    #logo:hover , #logo:hover {
         cursor: pointer !important;
         background-position: left;
     }
@@ -419,13 +419,13 @@ nav ol {
     cursor: pointer;
 }
 
-#container > footer a.aiswork:hover {
+#container > footer a.aiswork:hover, #container > footer a.aiswork:focus {
     text-decoration: underline;
     color: #8F0037 !important;
     cursor: pointer !important;
 }
 
-#container > footer a:hover {
+#container > footer a:hover, #container > footer a:focus {
     text-decoration: none;
 }
 
@@ -1686,10 +1686,10 @@ iframe {
     margin-right:20px;
 }
 
-#interactivebtn:hover{
-    background-color:#2f95a1;
-    text-decoration:none;
-}
+    #interactivebtn:hover, #interactivebtn:focus{
+        background-color: #2f95a1;
+        text-decoration: none;
+    }
 
 #circlespoon {
     position: relative;
