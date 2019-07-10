@@ -1789,6 +1789,13 @@ iframe {
         background-image: url('../image/about/dor.jpg');
     }
 
+    #behindsavta #aboutravid {
+        background-image: url('../image/about/ravid.png');
+    }
+
+    #behindsavta #aboutrotem {
+        background-image: url('../image/about/rotem.png');
+    }
 
 
 .hovereffect {
